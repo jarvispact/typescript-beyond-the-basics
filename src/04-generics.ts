@@ -22,12 +22,14 @@
     const identity = <T>(x: T) => x;
     const test1 = identity<string>('a'); // typeof test1: string
     // const test2 = identity<string>(1); // Argument of type 'number' is not assignable to parameter of type 'string'
-    const test3 = identity<number>(1); // typeof test2: number
+    const test3 = identity<number>(1); // typeof test3: number
+    const test4 = identity<boolean>(true); // typeof test4: boolean
 }
 {
     const identity = <T>(x: T) => x;
     const test1 = identity('a'); // typeof test1: "a"
     const test2 = identity(1); // typeof test2: 1
+    const test3 = identity(true); // typeof test3: true
 }
 
 // ===================

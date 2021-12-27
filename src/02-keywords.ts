@@ -105,5 +105,6 @@
     const doSomethingWithCountry = (country: Country) => country;
 
     doSomethingWithCountry('AT'); // ok
+    doSomethingWithCountry(Country.AT); // ok
     // doSomethingWithCountry('US') // Argument of type '"US"' is not assignable to parameter of type '"AT" | "DE" | "CH"'
 }
